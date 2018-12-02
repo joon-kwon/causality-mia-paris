@@ -1,0 +1,8 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*~
+*.toc
+/auto/causality-notes.el

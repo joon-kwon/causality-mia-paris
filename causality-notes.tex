@@ -1,0 +1,83 @@
+\documentclass[11pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsthm,amsmath,enumerate,bbm,tikz,stmaryrd,amssymb,lmodern}
+\usetikzlibrary{matrix,arrows}
+\usepackage[sort&compress,numbers]{natbib}
+\usepackage[french]{babel}
+
+\newtheorem{theorem}{Théorème}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollaire}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Définition}
+\newtheorem{example}[theorem]{Exemple}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remarque}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\indep}{\perp\!\!\!\perp}
+
+\definecolor{HalfGray}{gray}{0.55}
+\definecolor{OliveGreen}{rgb}{0,.35,0}
+\definecolor{webbrown}{rgb}{.6,0,0}
+\definecolor{BrightViolet}{rgb}{0.5,0.2,0.8}
+\definecolor{Maroon}{cmyk}{0, 0.87, 0.68, 0.32}
+\definecolor{RoyalBlue}{cmyk}{1, 0.50, 0, 0.25}
+\definecolor{Black}{cmyk}{0, 0, 0, 0}
+
+\definecolor{ccccccc}{RGB}{204,204,204}
+\definecolor{c808080}{RGB}{128,128,128}
+\definecolor{c999999}{RGB}{153,153,153}
+\definecolor{ce6e6e6}{RGB}{230,230,230}
+
+
+\usepackage[unicode]{hyperref}
+\hypersetup{
+colorlinks=true,
+linktocpage=true,
+%pdfstartpage=1,
+pdfstartview=FitH,
+breaklinks=true,
+pdfpagemode=UseNone,
+pageanchor=true,
+pdfpagemode=UseOutlines,
+plainpages=false,
+bookmarksnumbered,
+bookmarksopen=false,
+bookmarksopenlevel=1,
+hypertexnames=true,
+pdfhighlight=/O,
+%hyperfootnotes=true,
+%nesting=true,
+%frenchlinks,
+urlcolor=Maroon, linkcolor=RoyalBlue, citecolor=OliveGreen, % <--- for screen
+%urlcolor=black, linkcolor=black, citecolor=black, %pagecolor=black, % <--- for printing
+%pagecolor=RoyalBlue,
+pdftitle={},
+pdfauthor={},
+pdfsubject={},
+pdfkeywords={},
+pdfcreator={pdfLaTeX},
+pdfproducer={LaTeX with hyperref}
+}
+
+\title{Notes sur la causalité}
+\author{MIA--Paris}
+
+\begin{document}
+\maketitle
+
+\input{chapitres/introduction}
+
+\tableofcontents
+
+\input{chapitres/seance1}
+
+\bibliographystyle{alpha}
+\bibliography{causality}
+
+\end{document}
