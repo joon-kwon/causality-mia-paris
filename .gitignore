@@ -6,3 +6,5 @@
 *~
 *.toc
 /auto/causality-notes.el
+auto/*
+*.pdf
